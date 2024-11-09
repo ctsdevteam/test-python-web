@@ -4,9 +4,13 @@ from django.http import HttpResponse
 def home(request):
     ##return HttpResponse("Welcome to the home page")
     context = {
-        'title': 'Welcome to Our Website!',
+        'title': 'Home page',
     }
-    return render(request, 'home.html', context)
+    return render(request, 'home-page.html', context)
 
 def about(request):
-    return HttpResponse("This is the about page")
+    ##return HttpResponse("This is the about page")
+    context = {
+        'title': 'About page',
+    }
+    return render(request, 'about-page.html', context)

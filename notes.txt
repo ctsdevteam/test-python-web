@@ -1,0 +1,6 @@
+https://dashboard.render.com/
+Render: Start Command
+python manage.py runserver 0.0.0.0:80
+
+Render: Build Command
+pip freeze > requirements.txt
